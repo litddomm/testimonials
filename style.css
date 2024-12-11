@@ -1,0 +1,196 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(210, 46%, 95%);
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  /*common styling*/
+
+  .container{
+    display: grid;
+    grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    gap: 2rem;
+    font-family: "Barlow Semi Condensed";
+    padding-block: 2rem;
+    width: min(95%, 90rem);
+    margin-inline: auto;
+  }
+
+  @media (min-width: 50em){
+    .container{
+      grid-template-areas: 
+      'one one two five'
+      'three four four five';
+    }
+ 
+  }
+
+
+ 
+
+    .allWhiteH1{
+    color: white;
+}
+
+    .allGrayH1{
+        color: hsl(0, 0%, 81%);
+        grid-column-start: 2;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+
+    .allWhiteP{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .allGrayP{
+        color: hsl(0, 0%, 81%);
+        font-size: 1.2rem;
+    }
+
+    .secondColors{
+        color: hsl(217, 19%, 35%);
+    }
+
+    .secondColorP{
+        color:  hsl(217, 19%, 35%);
+        font-weight: 600;
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
+
+    .secondColorsGray{
+        color: hsl(0, 0%, 81%);
+    }
+
+    .secondColorsGrayP{
+        color:   hsl(217, 19%, 35%);
+        opacity: 70%;
+        font-size: 1.1rem;
+    }
+
+    .graduateColors{
+      color: hsl(217, 19%, 35%);
+      opacity: 50%;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    
+
+  /*first article*/
+
+  .firstArticle{
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 1rem;
+    padding: 20px;
+    grid-area: one;
+  }
+
+  .danielImg{
+    float: left;
+    margin-right:25px;
+    margin-top: 3px;
+    border-radius: 3rem;
+    border: 4px solid rgb(161, 115, 247);
+  }
+  /*second article*/
+
+  .secondArticle{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 1rem;
+    padding: 20px;
+    grid-area: two;
+  }
+
+  .jonathonImg{
+    float: left;
+    margin-right: 25px;
+    margin-top: 3px;
+    border-radius: 3rem;
+  }
+
+  .similarImg{
+    float: left;
+    margin-top: 3px;
+    margin-right: 25px;
+    border-radius: 3rem;
+  }
+
+  .patrickImg{
+    float: left;
+    margin-top: 3px;
+    margin-right: 25px;
+    border-radius: 3rem;
+    border: 4px solid rgb(94, 50, 145);
+  }
+  /*third article*/
+
+  .thirdArticle{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 20px;
+    grid-area: three;
+  }
+
+  /*fourth article*/
+
+  .fourthArticle{
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 1rem;
+    padding: 20px;
+    grid-area: four;
+  }
+  
+  /*fifth article*/
+
+  .fifthArticle{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 20px;
+    grid-area: five;
+  }
